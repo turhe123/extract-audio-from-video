@@ -102,6 +102,8 @@ If this saved you a trip to a paid converter, you can say thanks on [Ko-fi](http
 
 Find more at [turhe123.github.io/web-tools](https://turhe123.github.io/web-tools/).
 
+Also: [free, open-source Mac apps](https://turhe123.github.io/mac-apps/) built the same way, native Swift, no accounts, no telemetry.
+
 ## License
 
 MIT © Or Davidai Bachar
