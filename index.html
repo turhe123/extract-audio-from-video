@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO:START — the builder rewrites title / description / keywords for search (see CLAUDE.md) -->
+  <title>Extract Audio from Video – MP4 to MP3 or WAV, Free and Private</title>
+  <meta name="description" content="Extract audio from a video and save it as MP3 or WAV in your browser. Trim the start and end, pick a bitrate. Free, private, works offline, nothing is uploaded.">
+  <meta name="keywords" content="extract audio from video, video to mp3, mp4 to mp3, get audio from video, rip audio from video, mov to mp3, save audio from video, video to wav, webm to mp3">
+  <!-- SEO:END -->
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e0f14" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://turhe123.github.io/extract-audio-from-video/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Extract Audio from Video – Free, Private, In Your Browser">
+  <meta property="og:description" content="Pull the sound out of a video as MP3 or WAV in your browser, with nothing uploaded. Free and open source, nothing is uploaded, works offline.">
+  <meta property="og:url" content="https://turhe123.github.io/extract-audio-from-video/">
+  <meta property="og:image" content="https://turhe123.github.io/extract-audio-from-video/docs/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Extract Audio from Video">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Extract Audio from Video – Free, Private, In Your Browser">
+  <meta name="twitter:description" content="Pull the sound out of a video as MP3 or WAV in your browser, with nothing uploaded. Free and open source, nothing is uploaded, works offline.">
+  <meta name="twitter:image" content="https://turhe123.github.io/extract-audio-from-video/docs/og.png">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Extract Audio from Video",
+    "alternateName": "Extract Audio from Video – Free, Private, In Your Browser",
+    "description": "Pull the sound out of a video as MP3 or WAV in your browser, with nothing uploaded. Free and open source, nothing is uploaded, works offline.",
+    "url": "https://turhe123.github.io/extract-audio-from-video/",
+    "image": "https://turhe123.github.io/extract-audio-from-video/docs/og.png",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript. Works offline after the first visit.",
+    "isAccessibleForFree": true,
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "license": "https://opensource.org/licenses/MIT",
+    "softwareVersion": "1.0.0",
+    "author": { "@type": "Person", "name": "Or Davidai Bachar", "url": "https://github.com/turhe123" },
+    "sameAs": ["https://github.com/turhe123/extract-audio-from-video"]
+  }
+  </script>
+  <script src="vendor/lamejs/lame.min.js" defer></script>
+  <!-- Page views are counted with GoatCounter: no cookies, no personal data, open source. -->
+  <script data-goatcounter="https://turhe123.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#tool">Skip to the tool</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="./" aria-label="Extract Audio from Video home">
+        <img class="brand__icon" src="icon.svg" alt="" width="28" height="28">
+        <span class="brand__name">Extract Audio from Video</span>
+      </a>
+      <nav class="site-nav" aria-label="Page">
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://github.com/turhe123/extract-audio-from-video" rel="noopener">GitHub</a>
+        <a href="https://turhe123.github.io/web-tools/" rel="noopener" class="site-nav__more">More tools</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <!-- HERO:START — the builder may refine the headline and promise; keep the trust badges -->
+      <h1 class="hero__title">Extract Audio from Video</h1>
+      <p class="hero__lead">Pull the sound out of a video as MP3 or WAV in your browser, with nothing uploaded.</p>
+      <!-- HERO:END -->
+      <ul class="badges" aria-label="Why this tool is safe to use">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Runs in your browser, files never leave your device</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 16 0 8 8 0 0 0-16 0z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Free, open source, no account, no ads</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5 9.5 17 19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Works offline after the first visit</li>
+      </ul>
+    </section>
+
+    <section class="container" id="tool" aria-labelledby="tool-title">
+      <div class="tool-card">
+        <!-- TOOL:START — the builder replaces everything between these markers with the real tool UI -->
+        <h2 id="tool-title" class="visually-hidden">Extract audio from a video</h2>
+        <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Choose a video or audio file, or drop it here">
+          <label class="visually-hidden" for="file-input">Choose a video or audio file</label>
+          <input class="dropzone__input" id="file-input" type="file" accept="video/*,audio/*,.mp4,.m4v,.mov,.webm,.mkv,.m4a,.mp3,.wav,.ogg,.oga,.opus,.flac,.aac" aria-describedby="dropzone-hint">
+          <svg class="dropzone__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4m0 0-4 4m4-4 4 4M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p class="dropzone__title">Drop a video here or <span class="link">choose a file</span></p>
+          <p class="dropzone__hint" id="dropzone-hint">MP4, MOV, WebM or an audio file. It is read on this device and never uploaded.</p>
+        </div>
+        <div class="eav-file" id="file-panel" hidden>
+          <div class="eav-file__head">
+            <p class="eav-file__name" id="file-name"></p>
+            <p class="eav-file__info" id="file-info"></p>
+          </div>
+          <canvas class="eav-wave" id="waveform" role="img" aria-label="Waveform of the audio track"></canvas>
+        </div>
+        <div class="options eav-options" id="options" hidden>
+          <div class="field">
+            <label for="format">Output format</label>
+            <select id="format">
+              <option value="mp3" selected>MP3</option>
+              <option value="wav">WAV (lossless)</option>
+            </select>
+          </div>
+          <div class="field" id="bitrate-field">
+            <label for="bitrate">MP3 bitrate</label>
+            <select id="bitrate">
+              <option value="96">96 kbps</option>
+              <option value="128">128 kbps</option>
+              <option value="192" selected>192 kbps</option>
+              <option value="256">256 kbps</option>
+              <option value="320">320 kbps</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="start">Start</label>
+            <input type="text" id="start" inputmode="decimal" autocomplete="off" spellcheck="false" value="0:00" aria-describedby="range-hint">
+          </div>
+          <div class="field">
+            <label for="end">End</label>
+            <input type="text" id="end" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="range-hint">
+          </div>
+          <p class="field__hint eav-options__hint" id="range-hint">Times as m:ss or seconds, for example 1:05.5. Leave them as they are for the full length.</p>
+          <label class="check eav-options__mono"><input type="checkbox" id="mono"> Mix down to mono</label>
+        </div>
+        <div class="row eav-actions" id="actions" hidden>
+          <button class="btn btn--primary" id="extract" type="button">Extract audio</button>
+          <span class="field__hint">or press <kbd class="kbd">Enter</kbd></span>
+        </div>
+        <div class="eav-progress" id="progress-wrap" hidden>
+          <div class="progress" id="progress" role="progressbar" aria-label="Encoding progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+          <p class="field__hint" id="progress-label">Encoding… 0%</p>
+        </div>
+        <div class="results" id="results" aria-live="polite"></div>
+        <!-- TOOL:END -->
+      </div>
+    </section>
+
+    <section class="container section" id="how" aria-labelledby="how-title">
+      <h2 id="how-title" class="section__title">How it works</h2>
+      <!-- HOW:START — three honest steps for this tool -->
+      <ol class="steps">
+        <li><strong>Open your video.</strong> Drop an MP4, MOV or WebM file on the page or pick it. Your browser decodes the sound track on this device and draws its waveform.</li>
+        <li><strong>Pick MP3 or WAV.</strong> Choose a bitrate, optionally set a start and end time to keep only a part, and mix down to mono if you like.</li>
+        <li><strong>Extract and download.</strong> The audio is encoded in a background worker, then you can listen to it and save it under the video's name.</li>
+      </ol>
+      <!-- HOW:END -->
+    </section>
+
+    <section class="container section" id="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title" class="section__title">Questions, answered</h2>
+      <!-- FAQ:START — 4 to 6 questions; keep the privacy, offline and AI answers -->
+      <details class="faq" open>
+        <summary>Are my files uploaded anywhere?</summary>
+        <p>No. Extract Audio from Video runs entirely in your browser. Your video is read into memory on your device, its sound is decoded and encoded with JavaScript, and nothing is sent to a server. You can disconnect from the internet and it keeps working.</p>
+      </details>
+      <details class="faq">
+        <summary>Which video formats work?</summary>
+        <p>Anything your browser can decode: MP4 and MOV with AAC sound, and WebM or MKV with Opus or Vorbis sound, cover most phone and camera videos. If your browser cannot decode a particular sound codec, the tool says so and suggests trying another browser. When a video has several audio tracks, the default track is used. Videos with no audio track at all, such as screen recordings made with the microphone off, have no sound to extract, and the tool tells you so.</p>
+      </details>
+      <details class="faq">
+        <summary>Is there a size or length limit?</summary>
+        <p>There is no daily limit, but everything happens in your browser's memory. Files above about 1 GB may not fit, and decoded sound is large: an hour of stereo audio takes about 600 MB, so videos over two hours (one hour on iPhone and iPad) are refused. Trim long videos into parts first, or use the start and end times.</p>
+      </details>
+      <details class="faq">
+        <summary>Is it really free?</summary>
+        <p>Yes. It is open source under the MIT license, with no account, no limits and no ads. If it saves you a paid subscription, you can say thanks on Ko-fi.</p>
+      </details>
+      <details class="faq">
+        <summary>Does it work offline?</summary>
+        <p>Yes. After your first visit the page is cached by a service worker, so it loads and extracts audio without a connection. You can also install it from your browser's menu as an app.</p>
+      </details>
+      <details class="faq">
+        <summary>Was this written by AI?</summary>
+        <p>Yes. Extract Audio from Video was generated by Claude Code from a written specification inside an automated pipeline, with a test suite that runs in a real browser. The full source is on GitHub, so you can read every line before you trust it with your files.</p>
+      </details>
+      <!-- FAQ:END -->
+    </section>
+
+    <section class="container section" id="support">
+      <div class="support-card">
+        <h2 class="section__title">Built by one person, given away for free</h2>
+        <p>Extract Audio from Video is a free alternative to paid tools like Online Audio Converter and Video to MP3 sites such as 123apps and CloudConvert. If it earns a place in your bookmarks, a coffee keeps the updates coming.</p>
+        <a class="btn btn--kofi" href="https://ko-fi.com/leodavidai" rel="noopener">☕ Support Or on Ko-fi</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="site-footer__links">
+        <a href="https://github.com/turhe123/extract-audio-from-video" rel="noopener">Source on GitHub</a> ·
+        <a href="https://github.com/turhe123/extract-audio-from-video/issues" rel="noopener">Report a bug</a> ·
+        <a href="https://turhe123.github.io/web-tools/" rel="noopener">More free web tools</a> ·
+        <a href="https://ko-fi.com/leodavidai" rel="noopener">Ko-fi</a>
+      </p>
+      <p class="site-footer__disclosure"><strong>Built with AI.</strong> Extract Audio from Video was written by Claude Code inside an automated pipeline from a plain-English spec, as a clean-room implementation: no code or assets from any commercial product. It runs entirely in your browser, makes no network requests except an anonymous, cookieless page-view count, and has had less human review than hand-written software. Bug reports and pull requests are welcome.</p>
+      <p class="site-footer__copy">© 2026 Or Davidai Bachar · MIT License · <span id="sw-status" class="sw-status" aria-live="polite"></span></p>
+    </div>
+  </footer>
+
+  <script type="module" src="site.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

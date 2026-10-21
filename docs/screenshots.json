@@ -1,0 +1,34 @@
+[
+  {
+    "file": "01-desktop-light.png",
+    "caption": "Extract Audio from Video in the browser, light theme",
+    "alt": "Extract Audio from Video at 1440×900, light theme",
+    "width": 1440,
+    "height": 900,
+    "scheme": "light"
+  },
+  {
+    "file": "02-desktop-dark.png",
+    "caption": "Extract Audio from Video in the browser, dark theme",
+    "alt": "Extract Audio from Video at 1440×900, dark theme",
+    "width": 1440,
+    "height": 900,
+    "scheme": "dark"
+  },
+  {
+    "file": "03-phone-light.png",
+    "caption": "Extract Audio from Video on a phone",
+    "alt": "Extract Audio from Video at 390×844, light theme",
+    "width": 390,
+    "height": 844,
+    "scheme": "light"
+  },
+  {
+    "file": "04-phone-dark.png",
+    "caption": "Extract Audio from Video on a phone, dark theme",
+    "alt": "Extract Audio from Video at 390×844, dark theme",
+    "width": 390,
+    "height": 844,
+    "scheme": "dark"
+  }
+]
